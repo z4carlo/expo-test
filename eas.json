@@ -4,6 +4,9 @@
   },
   "build": {
     "development": {
+      "env": {
+        "ENV": "dev"
+      },
       "developmentClient": true,
       "distribution": "internal",
       "android": {
@@ -11,14 +14,32 @@
       }
     },
     "preview": {
+      "env": {
+        "ENV": "preview"
+      },
       "distribution": "internal",
       "android": {
         "buildType": "apk"
       }
     },
     "production": {
+      "env": {
+        "ENV": "production"
+      },
       "android": {
         "buildType": "apk"
+      }
+    },
+    "red": {
+      "extends": "production",
+      "env": {
+        "BUILDCONFIG": "red"
+      }
+    },
+    "blue": {
+      "extends": "production",
+      "env": {
+        "BUILDCONFIG": "blue"
       }
     }
   },
