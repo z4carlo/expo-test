@@ -3,7 +3,7 @@
     "version": ">= 0.48.1"
   },
   "build": {
-    "development": {
+    "dev": {
       "env": {
         "ENV": "dev"
       },
