@@ -2,6 +2,10 @@ import { merge } from "lodash"
 
 const devConfig = {
     expo : {
+        name: "Expo Dev",
+        android: {
+            package: "com.expotest.dev"
+        },
         extra: {
             CONFIG: "dev",
         }
@@ -20,9 +24,9 @@ module.exports = ({ config }) => {
         console.log("Custom Config Failed");
     }
 
-    // if (env === "dev") {
-    //     customConfig = merge(customConfig, devConfig);
-    // }
+    if (env === "dev") {
+        customConfig = merge(customConfig, devConfig);
+    }
 
     return { expo: merge( {}, config, customConfig.expo ) };
 }

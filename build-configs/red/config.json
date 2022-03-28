@@ -1,6 +1,9 @@
 {
     "expo": {
         "name": "Expo Red",
+        "android": {
+            "package": "com.expotest.red"
+        },
         "extra": {
             "CONFIG": "red"
         }
