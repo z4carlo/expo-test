@@ -58,18 +58,24 @@ workflows:
       - eas_build:
           name: Build Dev
           config: development
+          requires:
+            - install_deps
           filters:
             branches:
               only: develop
       - eas_build:
           name: Build Red Prod
           config: red
+          requires:
+            - install_deps
           filters:
             branches:
               only: master
       - eas_build:
           name: Build Blue Prod
           config: blue
+          requires:
+            - install_deps
           filters:
             branches:
               only: master
