@@ -1,5 +1,6 @@
 {
     "expo": {
+        "name": "Expo Blue",
         "extra": {
             "CONFIG": "blue"
         }
