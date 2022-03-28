@@ -7,13 +7,13 @@ executors:
   default:
     docker:
       - image: cimg/node:14.17.4
-    working_directory: ~/mobile-app
+    working_directory: ~/expo-test
 
 commands:
   attach_project:
     steps:
       - attach_workspace:
-          at: ~/mobile-app
+          at: ~/expo-test
 
 jobs:
   install_deps:
