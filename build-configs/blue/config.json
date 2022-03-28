@@ -1,6 +1,9 @@
 {
     "expo": {
         "name": "Expo Blue",
+        "android": {
+            "package": "com.expo-test.blue"
+        },
         "extra": {
             "CONFIG": "blue"
         }
