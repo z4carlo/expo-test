@@ -4,7 +4,7 @@ const devConfig = {
     expo : {
         name: "Expo Dev",
         android: {
-            package: "com.expo-test.dev"
+            package: "com.expotest.dev"
         },
         extra: {
             CONFIG: "dev",
