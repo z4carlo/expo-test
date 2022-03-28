@@ -57,7 +57,7 @@ workflows:
       - install_deps
       - eas_build:
           name: Build Dev
-          config: dev
+          config: development
           filters:
             branches:
               only: develop
