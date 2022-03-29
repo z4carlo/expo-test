@@ -31,12 +31,14 @@
       }
     },
     "red": {
+      "releaseChannel": "red-channel",
       "extends": "production",
       "env": {
         "BUILDCONFIG": "red"
       }
     },
     "blue": {
+      "releaseChannel": "blue-channel",
       "extends": "production",
       "env": {
         "BUILDCONFIG": "blue"
