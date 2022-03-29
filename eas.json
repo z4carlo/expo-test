@@ -3,7 +3,7 @@
     "version": ">= 0.48.1"
   },
   "build": {
-    "development": {
+    "dev": {
       "env": {
         "ENV": "dev"
       },
@@ -31,12 +31,14 @@
       }
     },
     "red": {
+      "releaseChannel": "red-channel",
       "extends": "production",
       "env": {
         "BUILDCONFIG": "red"
       }
     },
     "blue": {
+      "releaseChannel": "blue-channel",
       "extends": "production",
       "env": {
         "BUILDCONFIG": "blue"

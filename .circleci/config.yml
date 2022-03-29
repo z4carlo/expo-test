@@ -42,7 +42,7 @@ jobs:
           steps:
             - run:
                 name: Dev Build
-                command: EXPO_TOKEN="DCYHBgH7WSFkXvSCZCgiy7fNQEpXr2K9800sfEzu" npx eas-cli build --platform android --profile << parameters.config >> --non-interactive --no-wait
+                command: EXPO_TOKEN="DCYHBgH7WSFkXvSCZCgiy7fNQEpXr2K9800sfEzu" npx eas-cli build --platform android --profile << parameters.config >> --no-wait
       - when:
           condition:
             not:
@@ -50,14 +50,14 @@ jobs:
           steps:
             - run:
                 name: Prod Build
-                command: EXPO_TOKEN="DCYHBgH7WSFkXvSCZCgiy7fNQEpXr2K9800sfEzu" npx eas-cli build --platform android --profile << parameters.config >> --non-interactive --no-wait
+                command: EXPO_TOKEN="DCYHBgH7WSFkXvSCZCgiy7fNQEpXr2K9800sfEzu" npx eas-cli build --platform android --profile << parameters.config >> --no-wait
 workflows:
   build_app:
     jobs:
       - install_deps
       - eas_build:
           name: Build Dev
-          config: development
+          config: dev
           requires:
             - install_deps
           filters:
